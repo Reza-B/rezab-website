@@ -8,6 +8,10 @@ import MenuNavbar from "./Menu";
 
 const navList: INavItem[] = [
 	{
+		title: "Skills",
+		path: "#skills",
+	},
+	{
 		title: "About",
 		path: "#about",
 	},
@@ -15,20 +19,12 @@ const navList: INavItem[] = [
 		title: "Projects",
 		path: "#projects",
 	},
-	{
-		title: "About",
-		path: "#about",
-	},
-	{
-		title: "About",
-		path: "#about",
-	},
 ];
 
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-10  bg-[#121212] bg-opacity-90">
+		<nav className="fixed top-0 left-0 right-0 z-[100] bg-[#121212] bg-opacity-90">
 			<div className="flex flex-wrap items-center justify-between mx-auto px-12 py-4">
 				<Link
 					href="/"

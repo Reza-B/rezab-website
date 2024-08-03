@@ -24,19 +24,19 @@ const TsParticles = () => {
 						fpsLimit: 60,
 						interactivity: {
 							events: {
-								onClick: {
-									enable: true,
-									mode: "push",
-								},
-								onHover: {
-									enable: true,
-									mode: "grab",
-									parallax: {
-										enable: true,
-										force: 60,
-										smooth: 30,
-									},
-								},
+								// onClick: {
+								// 	enable: true,
+								// 	mode: "push",
+								// },
+								// onHover: {
+								// 	enable: true,
+								// 	mode: "grab",
+								// 	parallax: {
+								// 		enable: true,
+								// 		force: 60,
+								// 		smooth: 30,
+								// 	},
+								// },
 							},
 							modes: {
 								push: {

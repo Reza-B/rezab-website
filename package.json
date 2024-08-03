@@ -9,15 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/cache": "^11.13.0",
-    "@emotion/react": "^11.13.0",
-    "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.16.6",
-    "@mui/material": "^5.16.6",
-    "@mui/material-nextjs": "^5.16.4",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
     "next": "14.2.5",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
     "react-type-animation": "^3.2.0"

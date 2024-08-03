@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "../theme";
+import { Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const vazirmatn = Vazirmatn({ subsets: ["arabic"] });
 
 export const metadata: Metadata = {
 	title: "Reza Buzarjemehri",
@@ -20,13 +17,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
-				<AppRouterCacheProvider>
-					<ThemeProvider theme={theme}>
-						<Navbar />
-						{children}
-					</ThemeProvider>
-				</AppRouterCacheProvider>
+			<body className={vazirmatn.className}>
+				<Navbar />
+				{children}
 			</body>
 		</html>
 	);
