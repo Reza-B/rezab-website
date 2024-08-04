@@ -209,7 +209,7 @@ const Contact = () => {
 					</Link>
 				</div>
 			</div>
-			<p className="text-gray-500 w-fit mx-auto py-2">
+			<p className="text-gray-500 w-fit mx-auto py-2 text-sm">
 				Copyright &copy; Reza Buzarjemehri 2024. All rights reserved.
 			</p>
 		</section>

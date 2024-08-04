@@ -51,13 +51,6 @@ const HeroSection = () => {
 								className="px-6 inline-block py-2 sm:py-3  w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-center text-white font-semibold">
 								Hire Me
 							</Link>
-							<Link
-								href="/"
-								className="px-0.5 inline-block py-0.5 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 text-center text-white mt-2 sm:mt-3 font-semibold">
-								<span className="block bg-[#121212] hover:bg-[#090909] rounded-full px-5 py-1.5 sm:py-2">
-									Downlaod resume
-								</span>
-							</Link>
 						</div>
 					</div>
 				</div>

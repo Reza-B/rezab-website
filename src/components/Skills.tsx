@@ -9,7 +9,7 @@ import SoftSkills from "@/assets/soft-skills.png";
 const Skills = () => {
 	return (
 		<section
-			className="z-10 my-auto bg-black text-white"
+			className="z-10 my-auto pb-10 bg-black text-white place-content-center"
 			id="skills">
 			<div className="skills">
 				<h3>My Skills</h3>

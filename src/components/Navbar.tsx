@@ -9,16 +9,20 @@ import MenuNavbar from "./Menu";
 
 const navList: INavItem[] = [
 	{
-		title: "Skills",
-		path: "#skills",
+		title: "Projects",
+		path: "#projects",
 	},
 	{
 		title: "About",
 		path: "#about",
 	},
 	{
-		title: "Projects",
-		path: "#projects",
+		title: "Skills",
+		path: "#skills",
+	},
+	{
+		title: "Contact",
+		path: "#contact",
 	},
 ];
 
@@ -28,7 +32,7 @@ const Navbar = () => {
 		<motion.nav
 			animate={open ? "open" : "closed"}
 			className="fixed top-0 left-0 right-0 z-[10000] bg-[#121212] bg-opacity-90">
-			<div className="flex flex-wrap items-center justify-between mx-auto px-12 py-4">
+			<div className="flex items-center justify-between mx-auto px-12 py-4">
 				<Link
 					href="/"
 					className="text-lg md:text-2xl text-white font-semibold">
