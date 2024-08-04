@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
 	return (
-		<div
+		<section
 			className="about bg-black text-white z-10"
 			id="about">
 			<div className="left">
@@ -26,7 +26,7 @@ const About = () => {
 					risus r.
 				</p>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
 	return (
-		<div
+		<section
 			className="portfolio z-10 text-white"
 			id="projects">
 			<div className="header">
@@ -42,7 +42,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
