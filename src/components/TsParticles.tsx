@@ -28,15 +28,15 @@ const TsParticles = () => {
 								// 	enable: true,
 								// 	mode: "push",
 								// },
-								// onHover: {
-								// 	enable: true,
-								// 	mode: "grab",
-								// 	parallax: {
-								// 		enable: true,
-								// 		force: 60,
-								// 		smooth: 30,
-								// 	},
-								// },
+								onHover: {
+									enable: true,
+									mode: "grab",
+									parallax: {
+										enable: true,
+										force: 60,
+										smooth: 30,
+									},
+								},
 							},
 							modes: {
 								push: {

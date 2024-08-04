@@ -34,8 +34,10 @@ const Navbar = () => {
 					className="text-lg md:text-2xl text-white font-semibold">
 					Reza Buzarjemhri
 				</Link>
-				<button
+				<motion.button
 					onClick={() => setOpen((prev) => !prev)}
+					whileHover={{ scale: 1.1 }}
+					whileTap={{ scale: 0.9 }}
 					className="block md:hidden">
 					<svg
 						width="23"
@@ -83,7 +85,7 @@ const Navbar = () => {
 							}}
 						/>
 					</svg>
-				</button>
+				</motion.button>
 				<div
 					className="menu hidden md:block md:w-auto"
 					id="navbar">
