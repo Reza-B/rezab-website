@@ -19,20 +19,37 @@ const Contact = ({ lang }: { lang: Language }) => {
 							<span className="text-cyan-700">{"together"}</span>
 						</div>
 						<div className="mt-8">
-							<span className="font-bold">Mail</span>
+							<span className="font-bold">
+								{lang === "en" ? "Mail" : "ایمیل"}
+							</span>
 							<br />
-							<span className="hover:text-cyan-700">dev.reza21@gmail.com</span>
+							<span
+								dir="ltr"
+								className="hover:text-cyan-700">
+								dev.reza21@gmail.com
+							</span>
 						</div>
 						<div className="mt-4">
-							<span className="font-bold">Phone</span>
+							<span className="font-bold">
+								{lang === "en" ? "Phone" : "شماره تماس"}
+							</span>
 							<br />
-							<span className="hover:text-cyan-700">+98 9105972669</span>
+							<span
+								dir="ltr"
+								className="hover:text-cyan-700">
+								+98 9105972669
+							</span>
 						</div>
 						<div className="mt-4">
-							<span className="font-bold">Address</span>
+							<span className="font-bold">
+								{lang === "en" ? "Address" : "آدرس"}
+							</span>
 							<br />
+
 							<span className="hover:text-cyan-700">
-								Laleh Sahra street, Rudehen
+								{lang === "en"
+									? "Laleh Sahra street, Rudehen"
+									: "تهران، رودهن، بلوار لاله صحرا"}
 							</span>
 						</div>
 					</div>
@@ -71,7 +88,9 @@ const Contact = ({ lang }: { lang: Language }) => {
 				</div>
 				<Socials />
 			</div>
-			<p className="text-gray-500 w-fit mx-auto py-2 text-sm">
+			<p
+				dir="ltr"
+				className="text-gray-500 w-fit mx-auto py-2 text-sm">
 				Copyright &copy; Reza Buzarjemehri 2024. All rights reserved.
 			</p>
 		</section>

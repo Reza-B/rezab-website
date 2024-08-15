@@ -9,7 +9,7 @@ import { Language } from "@/types";
 
 const HeroSection = ({ lang }: { lang: Language }) => {
 	return (
-		<section className="z-[100] place-content-center pt-16 pb-2">
+		<section className="z-[100] place-content-center pt-16 pb-2 ">
 			<div className="container mx-auto px-6 sm:px-12">
 				<div className="grid grid-cols-1 sm:grid-cols-12">
 					<div className="col-span-5 place-self-center my-auto">
@@ -23,9 +23,12 @@ const HeroSection = ({ lang }: { lang: Language }) => {
 							/>
 						</div>
 					</div>
-					<div className="col-span-7 place-self-center sm:text-left">
+					<div
+						className={`col-span-7 place-self-center sm:${
+							lang === "en" ? "text-left" : "text-right"
+						}`}>
 						<h1 className="text-white mb-3 sm:mb-6 text-3xl lg:text-5xl font-extrabold">
-							<div className="text-transparent sm:mb-1 bg-clip-text bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 mb-2">
+							<div className="text-transparent bg-clip-text bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 mb-2 sm:mb-6">
 								{lang === "en" ? "Hello, I'm" : "سلام، من"}
 							</div>
 							<TypeAnimation
@@ -50,7 +53,7 @@ const HeroSection = ({ lang }: { lang: Language }) => {
 						<div>
 							<Link
 								href="/#contact"
-								className="px-6 tracking-wide inline-block py-2 sm:py-3  w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-center text-white font-semibold">
+								className="px-6 tracking-wide inline-block py-2 sm:py-3 w-full sm:w-fit rounded-full sm:mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-center text-white font-semibold">
 								{lang === "en" ? "Let's Talk" : "ارتباط با من"}
 							</Link>
 						</div>

@@ -1,3 +1,4 @@
+import { Language } from "@/types";
 import Link from "next/link";
 
 export default ({
@@ -5,11 +6,13 @@ export default ({
 	description,
 	imageUrl,
 	github,
+	lang,
 }: {
 	title: string;
 	description: string;
 	github: string;
 	imageUrl: string;
+	lang: Language;
 }) => {
 	return (
 		<>
@@ -20,7 +23,10 @@ export default ({
 				/>
 				<div className="flex border-b-2 border-transparent hover:border-[#5e3bee] rounded-b-2xl h-full dark:bg-gray-800 bg-teal-400 p-6 flex-col">
 					<div className="flex items-center mb-3">
-						<div className="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-[#5e3bee] text-white flex-shrink-0">
+						<div
+							className={`w-8 h-8 ${
+								lang === "en" ? "mr-3" : "ml-3"
+							} inline-flex items-center justify-center rounded-full bg-[#5e3bee] text-white flex-shrink-0`}>
 							<svg
 								fill="none"
 								stroke="currentColor"
@@ -39,6 +45,7 @@ export default ({
 							{description}
 						</p>
 						<Link
+							dir="ltr"
 							href={github}
 							className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">
 							Github

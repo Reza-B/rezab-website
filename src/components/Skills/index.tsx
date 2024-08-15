@@ -16,8 +16,10 @@ const Skills = ({ lang }: { lang: Language }) => {
 			className="z-10 my-auto pb-10 bg-black text-white place-content-center"
 			id="skills">
 			<div className="skills">
-				<h3>My Skills</h3>
-				<div className="skill-items">
+				<h3>{lang === "en" ? "My Skills" : "مهارت ها"}</h3>
+				<div
+					className="skill-items"
+					dir="ltr">
 					{skills_en.map((s, index) => (
 						<div className="item">
 							<div className="icon">

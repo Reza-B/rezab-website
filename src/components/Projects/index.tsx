@@ -4,14 +4,14 @@ import { getThreeProjects } from "@/data";
 import { Language } from "@/types";
 
 const Projects = ({ lang }: { lang: Language }) => {
-	const data = getThreeProjects("en");
+	const data = getThreeProjects(lang);
 	return (
 		<section
 			className="portfolio z-10 text-white"
 			id="projects">
 			<div className="header">
 				<div className="text-3xl">
-					<h3>Recent Projects</h3>
+					<h3>{lang === "en" ? "Recent Projects" : "پروژه های اخیر"}</h3>
 				</div>
 			</div>
 			<div className="portfo-items">
@@ -22,6 +22,7 @@ const Projects = ({ lang }: { lang: Language }) => {
 						description={project.description}
 						imageUrl={project.imagePath}
 						github={project.github}
+						lang={lang}
 					/>
 				))}
 			</div>
