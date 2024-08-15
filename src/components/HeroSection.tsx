@@ -14,7 +14,7 @@ const HeroSection = () => {
 						<div className="rounded-full relative bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] mb-6">
 							<Image
 								className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-								src="/assets/images/6.png"
+								src="/assets/images/hero.png"
 								alt="Reza Buzarjemehri"
 								width={300}
 								height={300}
@@ -48,8 +48,8 @@ const HeroSection = () => {
 						<div>
 							<Link
 								href="/#contact"
-								className="px-6 inline-block py-2 sm:py-3  w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-center text-white font-semibold">
-								Hire Me
+								className="px-6 tracking-wide inline-block py-2 sm:py-3  w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-center text-white font-semibold">
+								{"Let's Talk"}
 							</Link>
 						</div>
 					</div>
