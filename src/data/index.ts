@@ -1,3 +1,5 @@
+import { Language, Project, ProjectLanguageData, TechStack } from "@/types";
+
 // Recent Projects
 const RPids: number[] = [1, 2, 3];
 

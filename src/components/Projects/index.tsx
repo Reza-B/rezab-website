@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { getThreeProjects } from "@/app/data";
+import { getThreeProjects } from "@/data";
 
 const Projects = () => {
 	const data = getThreeProjects("fa");
