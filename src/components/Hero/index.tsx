@@ -10,7 +10,7 @@ import { Language } from "@/types";
 const HeroSection = ({ lang }: { lang: Language }) => {
 	return (
 		<section className="z-[100] place-content-center pt-16 pb-2 ">
-			<div className="container mx-auto px-6 sm:px-12">
+			<div className="container mx-auto px-4 sm:px-12">
 				<div className="grid grid-cols-1 sm:grid-cols-12">
 					<div className="col-span-5 place-self-center my-auto">
 						<div className="rounded-full relative bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] mb-6">
@@ -47,7 +47,7 @@ const HeroSection = ({ lang }: { lang: Language }) => {
 						</h1>
 						<p className="text-[#ADB7BE] text-base sm:text-lg mb-4 sm:mb-6 lg:text-xl">
 							{lang === "en"
-								? `I'm Reza Bouzarjomehri, a 22-year-old computer science student specializing in front-end development. I have experience with JavaScript, TypeScript, React, Next.js, and back-end technologies like Node.js and Express. Passionate and ready for new challenges.`
+								? `I'm Reza Buzarjemehri, a 22-year-old computer engineering student specializing in front-end development. I have experience with JavaScript, TypeScript, React, Next.js, and back-end technologies like Node.js and Express. Passionate and ready for new challenges.`
 								: `من رضا بوذرجمهری، ۲۲ ساله و دانشجوی کامپیوتر با تخصص در توسعه فرانت‌اند هستم. با جاوا اسکریپت، تایپ اسکریپت، React و Next.js و همچنین تکنولوژی‌های بک‌اند مانند Node.js و Express کار کردم. مشتاق و آماده برای چالش‌های جدید.`}
 						</p>
 						<div>

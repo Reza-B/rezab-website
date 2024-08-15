@@ -21,7 +21,9 @@ const Skills = ({ lang }: { lang: Language }) => {
 					className="skill-items"
 					dir="ltr">
 					{skills_en.map((s, index) => (
-						<div className="item">
+						<div
+							key={index}
+							className="item">
 							<div className="icon">
 								<Image
 									alt="Frontend"
@@ -31,8 +33,12 @@ const Skills = ({ lang }: { lang: Language }) => {
 							</div>
 							<h4>{`<${s.title} />`}</h4>
 							<div className="mt-4">
-								{s.items.map((i) => (
-									<p className="">• {i}</p>
+								{s.items.map((i, index) => (
+									<p
+										key={index}
+										className="">
+										• {i}
+									</p>
 								))}
 							</div>
 						</div>

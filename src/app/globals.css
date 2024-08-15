@@ -12,11 +12,9 @@ html {
 	scrollbar-width: none;
 	scroll-snap-type: y mandatory;
 	scroll-behavior: smooth;
-	/* background: #121212; */
 	background: linear-gradient(180deg, #121212, #040d1a);
 }
 section {
-	/* height: 100vh; */
 	min-height: 100vh;
 	scroll-snap-align: center;
 }
@@ -26,7 +24,7 @@ a {
 }
 
 .skills {
-	padding: 110px 85px 0;
+	padding: 110px 40px 0;
 }
 
 .skills h3,
@@ -81,14 +79,14 @@ a {
 }
 
 .about {
-	padding: 110px;
+	padding: 70px;
 	display: flex;
 	align-items: center;
 }
 
 .about .right p {
 	font-size: 16px;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .portfolio {
@@ -230,7 +228,7 @@ a {
 
 @media screen and (max-width: 768px) {
 	.skills {
-		padding: 85px 42px 0;
+		padding: 50px 20px 0;
 	}
 
 	.skills .skill-items {
@@ -238,11 +236,11 @@ a {
 	}
 
 	.about {
-		padding: 85px 42px;
+		padding: 85px 20px;
 	}
 
 	.portfolio {
-		padding: 60px 42px;
+		padding: 60px 20px;
 	}
 
 	.portfolio .portfo-items {

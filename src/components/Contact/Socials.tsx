@@ -3,7 +3,7 @@ import React from "react";
 
 const Socials = () => {
 	return (
-		<div className="flex w-fit gap-2 sm:gap-4 mt-16 mx-auto">
+		<div className="flex w-fit gap-2 sm:gap-4 mt-8 sm:mt-16 mx-auto">
 			<Link
 				target="_blank"
 				href="https://t.me/re_pv">

@@ -1,7 +1,7 @@
 import { Language } from "@/types";
 import Link from "next/link";
 
-export default ({
+const ProjectCard = ({
 	title,
 	description,
 	imageUrl,
@@ -66,3 +66,5 @@ export default ({
 		</>
 	);
 };
+
+export default ProjectCard;

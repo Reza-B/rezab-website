@@ -29,19 +29,19 @@ const navList_en: INavItem[] = [
 const navList_fa: INavItem[] = [
 	{
 		title: "پروژه های اخیر",
-		path: "#projects",
+		path: "/fa/#projects",
 	},
 	{
 		title: "درباره من",
-		path: "#about",
+		path: "/fa/#about",
 	},
 	{
 		title: "توانایی های من",
-		path: "#skills",
+		path: "/fa/#skills",
 	},
 	{
 		title: "ارتباط با من",
-		path: "#contact",
+		path: "/fa/#contact",
 	},
 ];
 
@@ -51,8 +51,8 @@ const Navbar = ({ lang }: { lang: Language }) => {
 		<motion.nav
 			dir={lang === "en" ? "ltr" : "rtl"}
 			animate={open ? "open" : "closed"}
-			className="fixed top-0 left-0 right-0 z-[10000] bg-[#121212] bg-opacity-90">
-			<div className="flex items-center justify-between mx-auto px-12 py-4">
+			className="fixed top-0 left-0 right-0 z-[10000] bg-[#121212] bg-opacity-70">
+			<div className="flex items-center justify-between mx-auto px-4 sm:px-12 py-4">
 				<Link
 					href={lang === "en" ? "/" : "/fa/"}
 					className="text-lg md:text-2xl text-white mr-4 font-semibold">
@@ -117,9 +117,9 @@ const Navbar = ({ lang }: { lang: Language }) => {
 					</motion.button>
 				</div>
 				<div
-					className="menu hidden md:block md:w-auto"
+					className="menu hidden md:block md:w-fit"
 					id="navbar">
-					<ul className="flex p-4 md:p-0 md:flex-row md: space-x-8 mt-0">
+					<ul className="flex p-4 md:p-0 md:flex-row gap-6 mt-0">
 						{lang === "en"
 							? navList_en.map((item, index) => (
 									<NavItem

@@ -363,12 +363,12 @@ export const skills_en: Skills[] = [
 
 export const aboutme = {
 	fa: [
-		`من رضا بوذرجمهری، ۲۲ ساله و دانشجوی کامپیوتر در دانشگاه علم و صنعت تهران هستم. از ۱۶ سالگی به برنامه‌نویسی علاقه‌مند شدم و از ۱۹ سالگی این مسیر رو به‌طور جدی دنبال کردم.`,
+		`من رضا بوذرجمهری، ۲۲ ساله و دانشجوی مهندسی کامپیوتر در دانشگاه علم و صنعت تهران هستم. از ۱۶ سالگی به برنامه‌نویسی علاقه‌مند شدم و از ۱۹ سالگی این مسیر رو به‌طور جدی دنبال کردم.`,
 		`آدم پرانرژی و فعالی هستم که همیشه دنبال یادگیری و حل چالش‌های جدیدم. علاوه بر برنامه‌نویسی، به نجوم، تکنولوژی، بازی‌های کامپیوتری و ورزش هم علاقه دارم. تخصصم در توسعه فرانت‌اند هست و با جاوا اسکریپت، تایپ اسکریپت، React و Next.js حسابی کار کردم.`,
 		`اگه دنبال یه برنامه‌نویس پرشور و مشتاق هستی که همیشه در حال پیشرفت و روبرو شدن با چالش‌های تازه‌ست، خوشحال می‌شم باهاتون همکاری کنم.`,
 	],
 	en: [
-		`I'm Reza Bouzarjomehri, a 22-year-old computer science student at Iran University of Science and Technology. I've been passionate about programming since I was 16, and I've been pursuing it seriously since I was 19.`,
+		`I'm Reza Buzarjemehri, a 22-year-old computer engineering student at Iran University of Science and Technology. I've been passionate about programming since I was 16, and I've been pursuing it seriously since I was 19.`,
 		`I'm an energetic and active person, always eager to learn and tackle new challenges. In addition to programming, I'm also interested in astronomy, technology, video games, and sports. My expertise lies in front-end development, and I've worked extensively with JavaScript, TypeScript, React, and Next.js. I also have experience working with back-end technologies like Node.js and Express.`,
 		`If you're looking for a passionate and driven developer who's always growing and taking on new challenges, I'd be happy to collaborate with you.`,
 	],
