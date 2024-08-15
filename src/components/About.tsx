@@ -6,13 +6,12 @@ const About = () => {
 		<section
 			className="bg-black text-white z-10 place-content-center"
 			id="about">
-			<div className="about">
-				<div className="left">
-					{/* <Image
-					src="/assets/header-img.png"
-					width={100}
-					height={400}
-				/> */}
+			<div className="about gap-6 sm:gap-16">
+				<div className="w-[260px] sm:w-[400px] p-1 rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500">
+					<img
+						className="rounded-full"
+						src="assets/images/profile.jpg"
+					/>
 				</div>
 				<div className="right">
 					<h3>About Me</h3>

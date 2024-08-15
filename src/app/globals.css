@@ -85,16 +85,6 @@ a {
 	padding: 110px;
 	display: flex;
 	align-items: center;
-	gap: 60px;
-}
-
-.about .left {
-	background-color: #121212;
-	border-radius: 10px 10px 0 0;
-}
-
-.about .left img {
-	width: 440px;
 }
 
 .about .right p {
