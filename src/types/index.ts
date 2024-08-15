@@ -42,4 +42,11 @@ export type Project = {
 	fa: ProjectLanguageData;
 	en: ProjectLanguageData;
 	techStack: TechStack;
+	github: string;
+	url: string;
+};
+
+export type Skills = {
+	title: string;
+	items: string[];
 };

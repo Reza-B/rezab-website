@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import NavItem from "./NavItem";
-import { INavItem } from "@/types";
+import { INavItem, Language } from "@/types";
 import MenuNavbar from "./Menu";
 
 const navList: INavItem[] = [
@@ -26,7 +26,7 @@ const navList: INavItem[] = [
 	},
 ];
 
-const Navbar = () => {
+const Navbar = ({ lang }: { lang: Language }) => {
 	const [open, setOpen] = useState(false);
 	return (
 		<motion.nav

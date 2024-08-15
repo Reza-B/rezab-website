@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import Socials from "./Socials";
+import { Language } from "@/types";
 
-const Contact = () => {
+const Contact = ({ lang }: { lang: Language }) => {
 	return (
 		<section
 			id="contact"

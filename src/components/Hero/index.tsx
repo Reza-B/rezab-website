@@ -1,11 +1,13 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { Language } from "@/types";
 
-const HeroSection = () => {
+const HeroSection = ({ lang }: { lang: Language }) => {
 	return (
 		<section className="z-[100] place-content-center pt-16 pb-2">
 			<div className="container mx-auto px-6 sm:px-12">
@@ -23,16 +25,16 @@ const HeroSection = () => {
 					</div>
 					<div className="col-span-7 place-self-center sm:text-left">
 						<h1 className="text-white mb-3 sm:mb-6 text-3xl lg:text-5xl font-extrabold">
-							<div className="text-transparent sm:mb-1 bg-clip-text bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500">
-								{"Hello, I'm"}
+							<div className="text-transparent sm:mb-1 bg-clip-text bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 mb-2">
+								{lang === "en" ? "Hello, I'm" : "سلام، من"}
 							</div>
 							<TypeAnimation
 								sequence={[
-									"Reza",
+									lang === "en" ? "Reza" : "رضاام",
 									1000,
-									"Web Developer",
+									lang === "en" ? "Web Developer" : "توسعه دهنده وب ام",
 									1000,
-									"Mobile Developer",
+									lang === "en" ? "Mobile Developer" : "توسعه دهنده موبایل ام",
 									1000,
 								]}
 								wrapper="div"
@@ -41,15 +43,15 @@ const HeroSection = () => {
 							/>
 						</h1>
 						<p className="text-[#ADB7BE] text-base sm:text-lg mb-4 sm:mb-6 lg:text-xl">
-							Web developer based in Tehran, passionate about learning new
-							technologies. Enthusiastic about building high-performance
-							applications and continually improving my skills.
+							{lang === "en"
+								? `I'm Reza Bouzarjomehri, a 22-year-old computer science student specializing in front-end development. I have experience with JavaScript, TypeScript, React, Next.js, and back-end technologies like Node.js and Express. Passionate and ready for new challenges.`
+								: `من رضا بوذرجمهری، ۲۲ ساله و دانشجوی کامپیوتر با تخصص در توسعه فرانت‌اند هستم. با جاوا اسکریپت، تایپ اسکریپت، React و Next.js و همچنین تکنولوژی‌های بک‌اند مانند Node.js و Express کار کردم. مشتاق و آماده برای چالش‌های جدید.`}
 						</p>
 						<div>
 							<Link
 								href="/#contact"
 								className="px-6 tracking-wide inline-block py-2 sm:py-3  w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-center text-white font-semibold">
-								{"Let's Talk"}
+								{lang === "en" ? "Let's Talk" : "ارتباط با من"}
 							</Link>
 						</div>
 					</div>

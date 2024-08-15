@@ -44,7 +44,7 @@ a {
 
 .skills .skill-items .item {
 	background-color: #121212;
-	width: 25%;
+	width: 30%;
 	border-radius: 10px;
 	padding: 32px;
 	border-bottom: 4px solid transparent;
@@ -72,12 +72,11 @@ a {
 .skills .skill-items .item h4,
 .portfolio .portfo-items .item .info h4 {
 	font-size: 18px;
+	margin-bottom: 10px;
 }
 
 .skills .skill-items .item p {
-	margin-top: 20px;
 	font-size: 14px;
-	line-height: 22px;
 	color: #8e8e8e;
 }
 
@@ -253,7 +252,9 @@ a {
 
 @media screen and (max-width: 576px) {
 	.skills .skill-items .item {
-		width: 100%;
+		width: 48%;
+		min-height: 285px;
+		padding: 20px;
 	}
 
 	.portfolio .header button {

@@ -1,9 +1,10 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { getThreeProjects } from "@/data";
+import { Language } from "@/types";
 
-const Projects = () => {
-	const data = getThreeProjects("fa");
+const Projects = ({ lang }: { lang: Language }) => {
+	const data = getThreeProjects("en");
 	return (
 		<section
 			className="portfolio z-10 text-white"
@@ -20,7 +21,7 @@ const Projects = () => {
 						title={project.title}
 						description={project.description}
 						imageUrl={project.imagePath}
-						slug={project.slug}
+						github={project.github}
 					/>
 				))}
 			</div>

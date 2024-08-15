@@ -3,17 +3,17 @@ import Link from "next/link";
 export default ({
 	title,
 	description,
-	slug,
 	imageUrl,
+	github,
 }: {
 	title: string;
 	description: string;
-	slug: string;
+	github: string;
 	imageUrl: string;
 }) => {
 	return (
 		<>
-			<div className="p-4 max-w-sm">
+			<div className="px-4 py-2 max-w-sm sm:h-[360px]">
 				<img
 					className="object-cover rounded-t-2xl h-[240px] w-full object-top"
 					src={imageUrl}
@@ -39,9 +39,9 @@ export default ({
 							{description}
 						</p>
 						<Link
-							href={`/products/${slug}`}
+							href={github}
 							className="mt-3 text-black dark:text-white hover:text-blue-600 inline-flex items-center">
-							Learn More
+							Github
 							<svg
 								fill="none"
 								stroke="currentColor"
