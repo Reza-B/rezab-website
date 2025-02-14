@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://rezab.ir
+
+# Sitemaps
+Sitemap: https://rezab.ir/sitemap.xml
